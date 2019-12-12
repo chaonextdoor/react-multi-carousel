@@ -5,10 +5,10 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "dev": "npm run clean && npm run build:server && nodemon dist/server/index.js",
+    "dev": "node init && npm run clean && npm run build:server && nodemon dist/server/index.js",
     "clean": "rimraf dist && rimraf .next",
-    "build": "npm run clean && next build && npm run build:server",
-    "build:server": "tsc --project tsconfig.server.json",
+    "build": "node init && npm run clean && next build && npm run build:server",
+    "build:server": "node init && tsc --project tsconfig.server.json",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
