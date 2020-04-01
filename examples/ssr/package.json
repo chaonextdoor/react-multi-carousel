@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
@@ -21,7 +21,7 @@
     "jss": "^9.8.7",
     "markdown-to-jsx": "^6.10.0",
     "mobile-detect": "^1.4.3",
-    "next": "^8.0.3",
+    "next": "^9.3.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-ga": "^2.5.7",
