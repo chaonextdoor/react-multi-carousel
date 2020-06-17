@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
